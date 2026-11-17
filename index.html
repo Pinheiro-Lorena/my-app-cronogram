@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Routine</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    
+    <meta name="theme-color" content="#ae9ccc">
+
+</head>
+<body>
+    <header>
+        <h1>My App Cronogram</h1>
+        <p>Estudos e Esportes</p>
+        <p id="current-day"></p>
+    </header>
+
+        <main class="dashboard1">
+            <section class="progress card">
+                <h2>Today's Progress</h2>
+                <p id="total-progress">0%</p>
+    
+            </section>
+            <div class="dashboard" id="language-dashboard">
+
+                <section class="card english-card">
+                    <h2>🇬🇧 English</h2>
+                    <p id="english-count">0 / 3 tasks</p>
+                    <div class="task-progress">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="task-list">
+                        <li>
+                            <label>
+                                <input type="checkbox">
+                                Vocabulary
+                            </label>
+                            </li>
+                        <li>
+                            <label>
+                                <input type="checkbox">
+                                Grammar
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox">
+                                Reading
+                            </label>
+                        </li>
+                    </ul>
+
+                </section>
+
+                <section class="card french-card">
+                    <h2>🇫🇷 French</h2>
+                    <p id="french-count">0 / 3 tasks</p>
+
+                    <div class="task-progress">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <ul class="task-list">
+                        <li>
+                            <label>
+                                <input type="checkbox">
+                                Vocabulary
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox">
+                                Grammar
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox">
+                                Reading
+                            </label>
+                        </li>
+
+                    </ul>
+                </section>
+            </div>
+
+    <section class="training card">
+        <h2>Training</h2>
+        <p id="workout-day">Today's Workout</p>
+        <h3 id="workout-name">Loading...</h3>
+
+        <div class="workout-record">
+        <label>
+            <input type="checkbox" id="workout-completed">
+            I completed this workout!
+        </label>
+    </div>
+</section>
+
+            <section class="calendar card">
+              <div class="calendar-header">
+                <button id="prev-month">&lt;</button>
+                <h2 id="month-year">November 2026
+                </h2>
+                <button id="next-month">&gt;</button>
+                
+              </div>
+
+              <div class="calendar-weekdays">
+            <span>Mon</span>
+            <span>Tue</span>
+            <span>Wed</span>
+            <span>Thu</span>
+            <span>Fri</span>
+            <span>Sat</span>
+            <span>Sun</span>
+              </div>
+
+              <div id="calendar-days" class="calendar-days"></div>
+
+              <div id="day-history" class="day-history">
+                <p> Select a day to see your history</p>
+              </div>
+            </section>
+<section class="statistics card">
+
+    <h2>Monthly Statistics</h2>
+
+    <div class="statistics-grid">
+
+        <div class="stat-item">
+            <h3>🇬🇧 English</h3>
+            <p id="english-days">0 days</p>
+        </div>
+
+        <div class="stat-item">
+            <h3>🇫🇷 French</h3>
+            <p id="french-days">0 days</p>
+        </div>
+
+        <div class="stat-item">
+            <h3>Completed Tasks</h3>
+            <p id="completed-tasks">0</p>
+        </div>
+
+        <div class="stat-item">
+            <h3>Consistency</h3>
+            <p id="consistency">0%</p>
+        </div>
+
+    </div>
+    <button id="reset-progress">Reset Progress</button>
+
+
+</section>
+
+<!-- PERFORMANCE CHARTS -->
+<section class="charts card">
+    <h2>Performance Charts</h2>
+
+    <div class="chart-container">
+        <h3>Study Performance</h3>
+        <div id="study-chart" class="chart"></div>
+    </div>
+
+    <div class="chart-container">
+        <h3>Workout Performance</h3>
+        <div id="workout-chart" class="chart"></div>
+    </div>
+</section>
+
+        </main>
+<script src="script.js"></script>
+</body>
+</html>
